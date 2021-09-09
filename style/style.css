@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background-color: #48C5CE;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 26px;
+    
+}
+
+.background {
+    padding: 20px;
+    background-image: url(../images/people.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.formContainer {
+    max-width: 230px;
+    background-color: #FFFFFFBB;
+    padding: 20px;
+    float: right;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.marginBottom {
+    margin-bottom: 15px;
+}
+
+input, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+select {
+    -moz-appearance: none;      /* Navegador Mozilla */
+    -webkit-appearance: none;   /* Navegador Chrome/ Safari 3*/
+    appearance: none;
+    background-image: url(../images/arrow.jpg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: #48C5CE;
+    font: bold;
+}
+
+
+/*---------- RODAPÉ - CONTEÚDO ----------*/
+footer {
+    background-color: #202121;
+    padding: 40px;
+    text-align: center; /* A imagem centralizou junto do texto por conta do .description estar "inline-block" */
+    
+}
+
+.picture {
+    width: 160px;
+}
+.description h3 {
+    font-size: 24px;
+}
+.description { 
+    display: inline-block;
+    text-align: left;  /* O texto foi alinhado à esquerda por ter sido forçado */
+    color: white;
+    max-width: 40%;
+    margin-left: 40px;
+}
+
+.description p, .description h3 {
+    margin-bottom: 20px;
+}
+
+/*---------- RODAPÉ - SOCIAL MEDIA ----------*/
+
+.socialMedia img{
+    display: inline;
+    text-align: center;
+    margin-top: 100px;
+    width: 20px;
+}
+
+.socialMedia a {
+    text-decoration: none;
+    list-style: none;
+    height: auto;
+    margin: 30px;
+}
+
+.socialMedia ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.socialMedia li {
+    display: inline;
+    text-align: center;
+    width: 10px;
+    height: 10px;
+}
+
+
+/*---------- RODAPÉ - INFO ----------*/
+
+.info {
+    margin-top: 100px;
+    color: white;
+    font: bold;
+}
+
+/* ---------- MOBILE ---------- */
+
+
+@media screen and (max-width: 415px) {
+
+.formContainer {
+    float: none;
+    margin: auto;
+}
+
+/* ---------- RODAPÉ ---------- */
+
+.picture {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.description { 
+    display: block;
+    text-align: center;  /* O texto foi alinhado à esquerda por ter sido forçado */
+    color: white;
+    max-width: 80%;
+    margin-left: 40px;
+}
+
+/*---------- RODAPÉ - INFO ----------*/
+
+.info {
+    margin-top: 80px;
+    
+}
+
+
+}
